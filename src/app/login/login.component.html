@@ -1,0 +1,73 @@
+<body>
+  <img src="/Assets/welcomeImage.png" class="welcomeImage">
+
+
+  <!-- Header Div -->
+  <div class="header">
+      <div class="companyName">PCT</div>
+      <div class="pctIcon"><img class="pctIcon" src="/Assets/pctIcon.png"></div>
+
+
+  </div>
+
+
+  <!-- Login Container Div -->
+  <div class="loginContainer">
+
+      <div class="loginHeader">{{formName}}</div>
+      <img src="/Assets/profileIcon.png" class="profileIcon">
+
+      <img src="/Assets/usernameIcon.png" class="usernameIcon">
+
+      @if(formHeader){
+
+        <div class="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <input class="usernameInput" formControlName="email" type="text" name="username" placeholder="Email Address" required #username>
+            <img class="linebar"  src="/Assets/linebar.png">
+
+            <input class="passwordInput" formControlName="password"  type="password" name="password" placeholder="Password" required #password minlength="6">
+            <img class="linebar2"  src="/Assets/linebar.png">
+            <img src="/Assets/passwordIcon.png" class="passwordIcon">
+
+            @if((password.value).length < 7){<div class="passwordError">Your password must contain at least 6 characters</div>}
+            @if(message){<div class="message"><h1>{{message}}</h1></div>}
+            <button class="loginBtn" type="submit">LOG IN</button>
+
+            <a class="signupLink" (click)="signupLink()"  >CREATE ACCOUNT</a>
+        </form>
+    </div>}
+
+
+    @if(!formHeader){
+      <div class="loginForm">
+        <form [formGroup]="signupForm" (ngSubmit)="signup()" >
+            <input formControlName="email" id="email" class="usernameInput " type="email" name="email" placeholder="Email Address" required #email >
+            <img class="linebar"  src="/Assets/linebar.png">
+
+            <input formControlName="phone"  class="passwordInput" type="text" name="phone" placeholder="Phone Number" required>
+            <img class="linebar2"  src="/Assets/linebar.png">
+            <img class="phoneIcon"  src="/Assets/phoneIcon.png">
+
+            <input formControlName="password"  class="phoneNumber" type="password" name="password" placeholder="Password" required minlength="6" #password>
+            <img class="linebar3"  src="/Assets/linebar.png">
+            <img src="/Assets/passwordIcon.png" class="passwordIcon2">
+
+            @if((password.value).length < 7){<div class="passwordError">Your password must contain at least 6 characters</div>}
+            @if(message){<div class="message"><h1>{{message}}</h1></div>
+          }
+            <button class="loginBtn" [disabled]="signupForm.invalid">SIGN UP</button>
+
+
+            <a class="signupLink" (click)="loginLink()" >LOG IN </a>
+        </form>
+    </div>
+                    }
+
+  </div>
+
+  <!-- Footer Div -->
+  <div class="footer"><div class="copyright">Powered by PCT 2025</div> <div class="ball"></div></div>
+
+
+</body>

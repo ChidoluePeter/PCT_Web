@@ -1,0 +1,434 @@
+body{
+  background-image: url(/Assets/background.png);
+}
+
+.header{
+  width:1000px;
+  height: 50px;
+  position:absolute;
+  top:0px;
+  left:50px;
+  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+
+
+.pct{
+  font-family: belleza;
+  font-size: 30px;
+  position: absolute;
+  left:7px;
+  top:7px;
+  color:whitesmoke;
+}
+
+
+
+.pctIcon{
+  position: absolute;
+  left:60px;
+  width:30px;
+  top:10px;
+}
+
+
+.loading{
+  background-color: whitesmoke;
+  border-radius: 50%;
+  width:25px;
+  height: 25px;
+  position: absolute;
+  left:465px;
+  top:5px;
+  animation: loading 1s infinite ease-in-out;
+
+}
+
+@keyframes powered {
+  0%{
+      transform: scale(0.2);
+  }
+  50%{
+      transform:scale(0.5);
+  }
+  100%{
+      transform:scale(0.8);
+  }
+}
+
+.userProfile{
+  position: absolute;
+  right:10px;
+  font-family: belleza;
+  font-size: 25px;
+  color:whitesmoke;
+  top:10px;
+}
+
+.profileIcon{
+  height: 30px;
+  width:30px;
+  position: absolute;
+  right:70px;
+  top:10px;
+
+}
+
+.userNotification{
+  position: absolute;
+  right:120px;
+  font-family: belleza;
+  font-size: 20px;
+  color:whitesmoke;
+  top:15px;
+
+}
+
+.notificationIcon{
+  height: 30px;
+  width:30px;
+  position: absolute;
+  right:70px;
+  top:10px;
+  right:220px;
+}
+
+.inbox{
+  position: absolute;
+  right:310px;
+  font-family: belleza;
+  font-size: 20px;
+  color:whitesmoke;
+  top:15px;
+}
+
+.inboxIcon{
+  height: 30px;
+  width:30px;
+  position: absolute;
+  right:360px;
+  top:10px;
+
+}
+
+.dashboard{
+  position: absolute;
+  right:420px;
+  font-family: belleza;
+  font-size: 20px;
+  color:whitesmoke;
+  top:15px;
+}
+
+.dashboardIcon{
+  height: 25px;
+  width:25px;
+  position: absolute;
+  right:510px;
+  top:10px;
+}
+
+.menuBar{
+  position: absolute;
+  left: 0px;
+  height: 400px;
+  width: 250px;
+  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
+  top:80px;
+  font-family: belleza;
+  font-size:15px;
+  border-radius: 0px 10px 0px 0px;
+  color:whitesmoke;
+
+}
+
+.copyright{
+  font-family: belleza;
+  font-size: 15px;
+  color: whitesmoke;
+  position: absolute;
+  right:7px;
+  bottom:0px;
+}
+
+.powered{
+  width:20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  animation: powered 1s ease-in-out infinite;
+  bottom: -3px;
+  left:90px;
+
+}
+
+
+
+.navlinks{
+  position: absolute;
+  display: grid;
+  color: whitesmoke;
+  left:20px;
+  top:25px;
+
+}
+
+.navLink{
+  color: whitesmoke;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  display: grid;
+}
+
+
+
+.contact{
+  position:absolute;
+  bottom:20px;
+  font-family: belleza;
+  font-size: 20px;
+  display: grid;
+  left:35px;
+
+}
+
+
+.contact a{
+  font-family: belleza;
+  font-size: 15px;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-bottom: 10px;
+
+
+}
+
+.homeIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  top:-5px;
+}
+
+.learningIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 80px;
+  top: 35px;
+}
+.projectIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 80px;
+  top:69px;
+}
+.supportIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 75px;
+  top:107px;
+}
+
+.addressIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  top:0px;
+}
+
+.phoneIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  top:70px;
+}
+
+.emailIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  top:40px;
+}
+
+.chatDiv{
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  right:  30px;
+  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
+  color: whitesmoke;
+  font-family: belleza;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+}
+
+.dashboardContainer{
+  position: absolute;
+  height: 400px;
+  width:820px;
+  left:270px;
+  top:80px;
+  border-radius: 20px 20px 0px 0px ;
+  display: flex;
+}
+
+.box1{
+
+
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+
+  border-radius: 10px;
+  left: 50px;
+  top:20px;
+
+
+}
+
+.box2{
+
+  top:20px;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+
+  border-radius: 10px;
+  left: 310px;
+
+
+}
+
+.box3{
+
+  top:20px;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+
+  border-radius: 10px;
+  right:50px;
+
+
+}
+
+
+.box4{
+
+  top:250px;
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+
+  border-radius: 10px 10px 0px 0px;
+  right:180px;
+
+
+}
+
+.box5{
+
+  top:250px;
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+
+  border-radius: 10px 10px 0px 0px;
+  right:450px;
+
+}
+
+
+.box1 h1{
+  font-family:belleza;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 75px;
+}
+.box1 .learningIcon{
+  margin-top: 80px;
+  margin-left: 8px;
+  height: 30px;
+  width: 30px;
+}
+.box2 h1 {
+   font-family:belleza;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 75px;
+}
+
+.box2 .projectIcon{
+  margin-top: 50px;
+  margin-left: 8px;
+  height: 30px;
+  width: 30px;
+
+}
+
+
+.box3 h1{
+  font-family:belleza;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 75px;
+}
+
+.box3 .taskIcon{
+  margin-top: -10px;
+  margin-left: 90px;
+  height: 30px;
+  width: 30px;
+}
+
+
+.box4 h1{
+  font-family:belleza;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 75px;
+}
+
+.box4 .profileIcon{
+  margin-top: 108px;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.box5 h1{
+  font-family:belleza;
+   color: whitesmoke;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 75px;
+}
+
+.box5 .supportIcon{
+  margin-top: 10px;
+  margin-left: 8px;
+  height: 30px;
+  width: 30px;
+}
