@@ -10,7 +10,7 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  private apiLink = 'http://localhost:5000/login'
+  private apiLink = 'https://pct-web-server.onrender.com/login';
 
   login(credentials:{email:String,password:String}):Observable<any>{
     return this.http.post(this.apiLink,credentials)

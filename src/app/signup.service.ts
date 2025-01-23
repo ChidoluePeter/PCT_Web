@@ -11,7 +11,7 @@ export class SignupService {
 
   constructor(private http: HttpClient) { }
 
-  private apiLink = 'http://localhost:5000/signup'
+  private apiLink = 'https://pct-web-server.onrender.com/signup';
 
   signup(credentials:{email:String,phone:String,password:String}):Observable<any>{
     return this.http.post(this.apiLink,credentials)
