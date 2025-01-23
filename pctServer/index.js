@@ -12,7 +12,11 @@ const helmet =  require('helmet');
 const app = express();
 
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: 'https://pct-web.onrender.com',
+  methods:['GET','POST','PUT','DELETE'],
+  credentials:true,
+}));
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 
@@ -87,12 +91,14 @@ app.post("/addtask",async (req,res)=>{
 })
 
 
+const distPath = path.join(__dirname, '/dist');
+
 // Serve Angular static files
-app.use(express.static(path.join('dist/pct/browser')));
+app.use(express.static(distPath));
 
 // Fallback route for Angular
-app.get('/*', (req, res) => {
-  res.sendFile(path.join('dist/pct/browser/index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(distPath, '/pct/browser/index.html'));
 });
 
 app.use((req,res)=>{
