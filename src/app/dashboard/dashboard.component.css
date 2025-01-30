@@ -8,12 +8,10 @@ body{
   position:absolute;
   top:0px;
   left:50px;
-  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
+  background: linear-gradient(90deg, #0D1139 75.86%, #7B7F87 100%);
   border-radius: 0px 0px 10px 10px;
 
 }
-
-
 
 .pct{
   font-family: belleza;
@@ -24,26 +22,11 @@ body{
   color:whitesmoke;
 }
 
-
-
 .pctIcon{
   position: absolute;
   left:60px;
   width:30px;
   top:10px;
-}
-
-
-.loading{
-  background-color: whitesmoke;
-  border-radius: 50%;
-  width:25px;
-  height: 25px;
-  position: absolute;
-  left:465px;
-  top:5px;
-  animation: loading 1s infinite ease-in-out;
-
 }
 
 @keyframes powered {
@@ -83,9 +66,17 @@ body{
   font-size: 20px;
   color:whitesmoke;
   top:15px;
-
+  text-decoration: underline;
 }
 
+.qr img{
+  height: 100px;
+  width:100px;
+  position: absolute;
+  left: 20px;
+  top: 170px;
+}
+/*
 .notificationIcon{
   height: 30px;
   width:30px;
@@ -93,7 +84,7 @@ body{
   right:70px;
   top:10px;
   right:220px;
-}
+} */
 
 .inbox{
   position: absolute;
@@ -102,8 +93,9 @@ body{
   font-size: 20px;
   color:whitesmoke;
   top:15px;
+  text-decoration: underline;
 }
-
+/*
 .inboxIcon{
   height: 30px;
   width:30px;
@@ -111,31 +103,32 @@ body{
   right:360px;
   top:10px;
 
-}
+} */
 
 .dashboard{
   position: absolute;
-  right:420px;
+  right:400px;
   font-family: belleza;
   font-size: 20px;
   color:whitesmoke;
   top:15px;
+  text-decoration: underline;
 }
-
+/*
 .dashboardIcon{
   height: 25px;
   width:25px;
   position: absolute;
   right:510px;
   top:10px;
-}
+} */
 
 .menuBar{
   position: absolute;
   left: 0px;
   height: 400px;
   width: 250px;
-  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
+  background: linear-gradient(180deg, #0D1139 53.86%, #1E1F21 63.36%);
   top:80px;
   font-family: belleza;
   font-size:15px;
@@ -143,7 +136,6 @@ body{
   color:whitesmoke;
 
 }
-
 .copyright{
   font-family: belleza;
   font-size: 15px;
@@ -166,8 +158,6 @@ body{
 
 }
 
-
-
 .navlinks{
   position: absolute;
   display: grid;
@@ -180,12 +170,10 @@ body{
 .navLink{
   color: whitesmoke;
   margin-bottom: 20px;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 15px;
   display: grid;
 }
-
-
 
 .contact{
   position:absolute;
@@ -262,24 +250,11 @@ body{
   top:40px;
 }
 
-.chatDiv{
-  height: 50px;
-  width: 150px;
-  position: absolute;
-  bottom: 0px;
-  right:  30px;
-  background: linear-gradient(90deg, #0D1139 0%, #23309F 100%);
-  color: whitesmoke;
-  font-family: belleza;
-  border-radius: 10px 10px 0px 0px;
-  text-align: center;
-}
-
 .dashboardContainer{
   position: absolute;
   height: 400px;
   width:820px;
-  left:270px;
+  left:250px;
   top:80px;
   border-radius: 20px 20px 0px 0px ;
   display: flex;
@@ -291,7 +266,7 @@ body{
   position: absolute;
   height: 200px;
   width: 200px;
-  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+  background: linear-gradient(180deg, #0C0C0E 47.36%, #636374 100%);
 
   border-radius: 10px;
   left: 50px;
@@ -306,7 +281,7 @@ body{
   position: absolute;
   height: 200px;
   width: 200px;
-  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+  background: linear-gradient(180deg, #0C0C0E 47.36%, #636374 100%);
 
   border-radius: 10px;
   left: 310px;
@@ -320,7 +295,7 @@ body{
   position: absolute;
   height: 200px;
   width: 200px;
-  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+  background: linear-gradient(180deg, #0C0C0E 47.36%, #636374 100%);
 
   border-radius: 10px;
   right:50px;
@@ -335,7 +310,7 @@ body{
   position: absolute;
   height: 150px;
   width: 200px;
-  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+  background: linear-gradient(180deg, #0C0C0E 47.36%, #636374 100%);
 
   border-radius: 10px 10px 0px 0px;
   right:180px;
@@ -349,7 +324,7 @@ body{
   position: absolute;
   height: 150px;
   width: 200px;
-  background: linear-gradient(180deg, #1E1F21 0%, #7B7F87 100%);
+  background: linear-gradient(180deg, #0C0C0E 47.36%, #636374 100%);
 
   border-radius: 10px 10px 0px 0px;
   right:450px;
@@ -433,66 +408,3 @@ body{
   width: 30px;
 }
 
-
-/*  */
-
-
-/* Responsive Design for dashboard.component.css */
-
-/* Media Query for Tablets (max-width: 991px) */
-@media (max-width: 991px) {
-  .dashboardContainer {
-    width: 100%;
-    left: 0;
-  }
-
-  .menuBar {
-    width: 200px;
-  }
-
-  .box1, .box2, .box3, .box4, .box5 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .box1 h1, .box2 h1, .box3 h1, .box4 h1, .box5 h1 {
-    font-size: 20px;
-  }
-}
-
-/* Media Query for Mobile (max-width: 767px) */
-@media (max-width: 767px) {
-  body {
-    background-size: cover;
-  }
-
-  .dashboardContainer {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    left: 0;
-  }
-
-  .menuBar {
-    width: 150px;
-    font-size: 12px;
-  }
-
-  .navlinks, .contact {
-    font-size: 12px;
-  }
-
-  .box1, .box2, .box3, .box4, .box5 {
-    width: 100px;
-    height: 100px;
-  }
-
-  .box1 h1, .box2 h1, .box3 h1, .box4 h1, .box5 h1 {
-    font-size: 15px;
-  }
-
-  .chatDiv {
-    width: 100px;
-    font-size: 12px;
-  }
-}
