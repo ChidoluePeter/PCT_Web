@@ -16,6 +16,7 @@ export class DashboardComponent {
 
   learning(){
   this.router.navigate(['learning'])
+ 
 }
 
 
