@@ -318,6 +318,7 @@ body{
   left: 40px;
   top: 0px;
   border-radius: 10px 0px 0px 10px;
+  border: whitesmoke 1px solid;
 }
 
 .course1 .courseName{
@@ -399,6 +400,7 @@ body{
   top: 5px;
   border-radius: 10px 10px 0px 0px;
   font-family: belleza;
+  border: whitesmoke 1px solid;
 
 }
 .course2 .courseName{
@@ -480,6 +482,7 @@ body{
   left: 460px;
   top: 0px;
   border-radius: 0px 10px 10px 0px;
+  border: whitesmoke 1px solid;
 }
 .course3 .courseName{
   position: absolute;
