@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule,RouterModule,LoginComponent],
+  imports: [FormsModule,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
