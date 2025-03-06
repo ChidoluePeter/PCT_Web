@@ -467,6 +467,7 @@ body{
   outline: none;
   border: whitesmoke 1px solid;
 }
+
 .mobileAppIcon{
   position: absolute;
   height: 25px;
@@ -474,6 +475,7 @@ body{
   right:10px;
   top:5px;
 }
+
 .course3{
   position: absolute;
   width: 200px;
@@ -484,6 +486,7 @@ body{
   border-radius: 0px 10px 10px 0px;
   border: whitesmoke 1px solid;
 }
+
 .course3 .courseName{
   position: absolute;
   top: 10px;
