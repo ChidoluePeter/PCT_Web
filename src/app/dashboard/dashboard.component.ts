@@ -18,7 +18,7 @@ export class DashboardComponent {
 
   learning(event: any){
     event.preventDefault();
-  this.router.navigate(['dashboard/learning']);
+  this.router.navigate(['/dashboard/learning']);
 
 }
 
