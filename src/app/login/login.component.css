@@ -56,6 +56,11 @@ body{
   opacity: 100%;
 }
 
+.loginForm{
+  position: absolute;
+  top : -30px;
+}
+
 .loginContainer{
   /* background: linear-gradient(90deg, #0D1139 0%, #23309F 100%); */
   background-color: transparent;
@@ -168,17 +173,19 @@ body{
 .signupLink{
   position: absolute;
   font-family: belleza;
-  font-size: 20px;
-  left: 100px;
-  top: 180px;
+  font-size: 25px;
+  left: 50px;
+  top: 300px;
   color: white;
   cursor: pointer;
+  width:550px;
+  text-align : center;
 }
 .signupLink:hover{
-  font-size: 20px;
+  font-size: 25px;
   outline: 1px solid white;
   border-radius: 10px;
-  width: 200px;
+  width: 350px;
   height: 40px;
   text-align: center;
 
@@ -195,7 +202,7 @@ body{
 .usernameIcon{
   position: absolute;
   left: 0px;
-  top: 70px;
+  top: 50px;
   width: 30px;
   height: 30px;
 }
@@ -269,7 +276,7 @@ body{
   font-family: belleza;
   font-size: 20px;
   left: 30px;
-  bottom:20px;
+  top:330px;
    background :linear-gradient(90deg, black 0%, #7B7F87 100%);
   color: whitesmoke;
   border-radius: 15px;
