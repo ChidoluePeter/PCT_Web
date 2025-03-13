@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-image: url("/Assets/background.png");
+  background-color: black;
   margin: 0px;
   padding: 0px;
 }

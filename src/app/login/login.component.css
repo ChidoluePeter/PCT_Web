@@ -324,7 +324,7 @@ body{
 /* Responsive Design for login.component.css */
 
 /* Media Query for iPhone 14 (max-width: 390px) */
-@media (max-width: 469px) {
+@media (max-width: 430px) {
   .header {
     width: 1000px;
     height: 150px;
