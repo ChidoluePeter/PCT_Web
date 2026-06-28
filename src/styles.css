@@ -1,6 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-  background-color: black;
-  margin: 0px;
-  padding: 0px;
-}
+*,
+    *::before,
+    *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-secondary: #12121a;
+      --bg-card: #1a1a26;
+      --bg-card-hover: #222233;
+      --text-primary: #f0f0f5;
+      --text-secondary: #a0a0b8;
+      --text-muted: #6b6b80;
+      --accent: #7c3aed;
+      --accent-hover: #8b5cf6;
+      --accent-subtle: rgba(124, 58, 237, 0.1);
+      --accent-glow: rgba(124, 58, 237, 0.3);
+      --gradient-1: linear-gradient(135deg, #7c3aed, #4f46e5);
+      --gradient-2: linear-gradient(135deg, #7c3aed, #ec4899);
+      --gradient-text: linear-gradient(135deg, #c4b5fd, #7c3aed);
+      --border: rgba(255, 255, 255, 0.06);
+      --border-hover: rgba(255, 255, 255, 0.12);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-lg: 24px;
+      --shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 60px rgba(124, 58, 237, 0.15);
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1200px;
+      --nav-height: 72px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
