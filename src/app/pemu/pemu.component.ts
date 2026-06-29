@@ -11,7 +11,8 @@ import { FormControl, ReactiveFormsModule, RequiredValidator } from '@angular/fo
   selector: 'app-pemu',
   imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule,],
   templateUrl: './pemu.component.html',
-  styleUrl: './pemu.component.css'
+  styleUrl: './pemu.component.css',
+  standalone: true
 })
 export class PemuComponent {
 
